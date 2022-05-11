@@ -1,0 +1,58 @@
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
+  .nav {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5% 5% 0% 5%;
+    box-sizing: border-box;
+
+    .app-name,
+    .zone-logo {
+      width: auto;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      img {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+      }
+      h1 {
+        font-family: 'Hand';
+      }
+    }
+  }
+  &-content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+
+    .menu {
+      width: 30%;
+      height: 90%;
+      border-right: 2px solid black;
+      min-width: 200px;
+
+      &-title {
+        font-family: 'Hand';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .view {
+      width: 68%;
+      height: 90%;
+    }
+  }
+}
