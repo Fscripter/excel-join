@@ -1,0 +1,92 @@
+.Descargando {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  &-title {
+    width: 100%;
+    height: 10%;
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-subtitle {
+    width: 100%;
+    height: 5%;
+    font-family: 'Patrick Hand';
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+  }
+  &-preview {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    table {
+      display: block;
+      max-width: -moz-fit-content;
+      height: 90%;
+      max-width: 95%;
+      max-height: 95%;
+      overflow-x: auto;
+      overflow-y: auto;
+      white-space: nowrap;
+      border-collapse: collapse;
+      font-family: 'Roboto';
+    }
+    th,
+    td {
+      border: 1px solid black;
+      padding: 5px;
+      min-width: 75px;
+    }
+    tr:first-child {
+      background-color: lightgreen;
+      font-weight: bolder;
+    }
+    tr:nth-child(n + 10) {
+      display: none;
+    }
+  }
+  &-options {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &-btn {
+      width: 150px;
+      font-family: 'Roboto';
+      font-weight: bolder;
+      font-size: 1.1rem;
+      display: flex;
+      border: none;
+      align-items: center;
+      justify-content: space-around;
+      height: 40px;
+      background-color: red;
+      border-radius: 28px;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+    .restart {
+      background-color: lightgreen;
+      border: 2px solid green;
+    }
+    .download {
+      background-color: black;
+      color: white;
+    }
+  }
+}

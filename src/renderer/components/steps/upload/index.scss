@@ -1,0 +1,155 @@
+.upload {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h4 {
+      font-family: 'Roboto';
+      font-weight: bolder;
+      font-size: 1.3rem;
+    }
+    span {
+      font-family: 'Patrick Hand';
+      font-style: italic;
+    }
+  }
+  .content {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .dragFile {
+      width: 45%;
+      height: 60%;
+      border: 2px dashed black;
+      border-radius: 18px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      max-width: 250px;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      p {
+        width: 100%;
+        font-family: 'Roboto';
+        font-size: 0.95rem;
+        text-align: center;
+        text-transform: initial;
+      }
+      span {
+        color: green;
+        font-weight: bolder;
+        font-family: 'Roboto';
+        cursor: pointer;
+      }
+      input {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        cursor: pointer;
+      }
+    }
+    .dragFile-active {
+      width: 45%;
+      height: 60%;
+      border: 2px dashed black;
+      border-radius: 18px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      max-width: 250px;
+
+      &-box {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+
+        &-text {
+          width: 100%;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          p {
+            width: 100%;
+            text-align: center;
+            height: 100%;
+          }
+        }
+
+        .closeBox {
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          font-weight: bolder;
+          cursor: pointer;
+        }
+        p {
+          height: 35px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100%;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      p {
+        width: 100%;
+        font-family: 'Roboto';
+        font-size: 0.95rem;
+        text-align: center;
+        font-weight: bolder;
+      }
+      span {
+        color: green;
+        font-weight: bolder;
+        font-family: 'Roboto';
+        cursor: pointer;
+      }
+      input {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.next {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    width: 150px;
+    height: 100%;
+    border-radius: 18px;
+    border: 1px solid black;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 1.1rem;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+    transition: 0.2s all ease;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .nextButton:active {
+    transform: translate(5px, 5px);
+    box-shadow: 2px 2px 2px green;
+    background-color: lawngreen;
+  }
+  .disabled {
+    color: gray;
+    border-color: gray;
+    filter: grayscale(100%);
+
+    img {
+      filter: grayscale(100%);
+      display: none;
+    }
+    cursor: not-allowed;
+  }
+}

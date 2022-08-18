@@ -1,0 +1,104 @@
+.Home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 6%;
+
+  &-TopBar {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: space-between;
+    h1 {
+      font-family: 'Patrick Hand';
+      font-size: 2rem;
+    }
+    .Home-Icon {
+      height: 60px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      img {
+        width: 55px;
+        height: auto;
+        margin-right: 15px;
+      }
+    }
+    .Home-Town {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        width: 55px;
+        height: auto;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .Zone {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .Home-Menu {
+      width: 30%;
+      height: 90%;
+      border-right: 2px solid gray;
+
+      &-Title {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        h2 {
+          font-family: 'Roboto';
+        }
+      }
+      &-Steps {
+        width: 100%;
+        height: 70%;
+
+        &-Box {
+          width: 100%;
+          height: 75px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          img {
+            width: 25px;
+            height: auto;
+            margin-right: 15px;
+          }
+        }
+        .pending {
+          color: black;
+          font-weight: bolder;
+          font-family: 'Roboto';
+        }
+        .error {
+          text-decoration: line-through;
+          color: gray;
+          font-style: italic;
+        }
+        .done {
+          color: green;
+          font-weight: bold;
+          font-family: 'Roboto';
+        }
+      }
+    }
+    .Viewer {
+      width: 68%;
+      height: 90%;
+      // background-color: green;
+    }
+  }
+}

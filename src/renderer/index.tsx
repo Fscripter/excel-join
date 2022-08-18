@@ -1,13 +1,11 @@
-import { createRoot } from 'react-dom/client';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
 import App from './App';
+import store from '../store/index';
 
-const container = document.getElementById('root')!;
-const root = createRoot(container);
-root.render(<App />);
-
-// calling IPC exposed from preload script
-window.electron.ipcRenderer.once('ipc-example', (arg) => {
-  // eslint-disable-next-line no-console
-  console.log(arg);
-});
-window.electron.ipcRenderer.myPing();
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
