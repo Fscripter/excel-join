@@ -9,11 +9,7 @@ Este programa esta diseñado para realizar operaciones tipo join en excel, con l
 Esta diseñado para ser usado como una aplicacion de escritorio, con el proposito de ser utilizado en plataformas como windows, linux y mac.
 
 - Windows
-    
-    Para esta instalación, se utilizara electron como plataforma para utilizar el software, el archivo de instalacion esta comprendido aqui:
-    
-     
-    
+  Para esta instalación, se utilizara electron como plataforma para utilizar el software, el archivo de instalacion esta comprendido aqui:
 - Linux
 - Mac
 
@@ -26,11 +22,11 @@ Para este tipo de algoritmo se tendran en cuenta ciertas variables, las cuales d
 - Right Join
 - Outer Join
 
-[Inner Join](Readmedata/Inner%20Join%208511a.md)
+[Inner Join](ReadmeData/Inner%20Join%208511a.md)
 
-[Outer Join](Readmedata/Outer%20Join%20f7f03.md)
+[Outer Join](ReadmeData/Outer%20Join%20f7f03.md)
 
-[Left Join](Readmedata/Left%20Join%20ad7f8.md)
+[Left Join](ReadmeData/Left%20Join%20ad7f8.md)
 
 ### Contribuciones
 
